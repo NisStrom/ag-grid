@@ -188,7 +188,7 @@ var ResizeObserverController = (function () {
         if (mutationObserverSupported) {
             this.mutationsObserver_ = new MutationObserver(this.refresh);
             this.mutationsObserver_.observe(document, {
-                attributes: true,
+                attributes: false,
                 childList: true,
                 characterData: true,
                 subtree: true
